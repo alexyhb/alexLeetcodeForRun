@@ -25,3 +25,24 @@
 -109 <= nums[i] <= 109
 -109 <= target <= 109
 只会存在一个有效答案。
+
+
+```typescript
+//解法1 暴力解法
+function twoSum(nums: number[], target: number): number[] {
+    let res=[]
+    for(let i = 0;i<nums.length;i++){
+        for(let j=0;j<nums.length;j++){
+            if(!(i==j)){
+
+                if(nums[i]+nums[j]===target){
+                    res.push(i)
+                    res.push(j)
+                    return res
+                }
+            }
+        }
+    }
+    return res
+};
+```
