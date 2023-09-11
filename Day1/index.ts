@@ -17,8 +17,9 @@ function twoSum(nums: number[], target: number): number[] {
 
 //2
 function twoSum2(nums: number[], target: number): number[] {
-    let helperMap: Map<number, number>;
-    helperMap = new Map();
+    // @ts-ignore
+    let helperMap: Map<number, number>=new Map();
+
     let index: number | undefined;
     let resArr: number[] = [];
     for (let i = 0, length = nums.length; i < length; i++) {
